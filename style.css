@@ -29,10 +29,12 @@
 }
 
 #contatore{
-  color: white;;
+  color: white;
   width: 35vw;
   height: 100px;
   background: #cecece;
   margin: 0 auto;
   text-align: center;
+  line-height: 100px;
+  font-size: 30px;
 }

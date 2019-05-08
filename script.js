@@ -1,6 +1,6 @@
 for (var i = 0; i < 65; i++) {
   /*
-  con .append ad ogni ciclo aggiungo un <div class = "quadratini" id = "div(i)"/>
+  con .append ad ogni ciclo aggiungo un <div class = "quadratini"/>
   al div padre con class = ".box_container"
   in modo da creare una griglia di i-1 quadratini
   */
@@ -19,34 +19,27 @@ while (rnd.length < 16){
   }
 };
 
-console.log(rnd.sort());
-
 //genero i quadratini verdi e rossi
 $('.quadratini').each(function() {
   //genero i quadratini rossi
   if( rnd.includes($(this).index()) ){
     $(this).click(function() {
-      $(this).toggleClass('red');
+      $(this).addClass('red');
+      //conta i rossi
+      red_count++;
+      document.getElementById('rossi').innerHTML =red_count;
     });
   }else{
     $(this).click(function() {
-      $(this).toggleClass('green');
+      $(this).addClass('green');
+      //conta i verdi
+      green_count++;
+      document.getElementById('verdi').innerHTML =green_count;
     });
   }
 });
 
-
-$('.quadratini').each(function(){
-  if($('.quadratini').hasClass('red')){
-    red_count+=1;
-  }else if ($('.quadratini').hasClass('green')) {
-    green_count+=1;
-  }
-});
-
-
-document.getElementById('contatore').innerHTML ="Rossi: "+red_count+" Verdi: "+red_count;
-console.log($('.box_container'));
+//console.log($('.box_container'));
 
 function rndNum(min, max) {
   return Math.floor(Math.random()*(max - min + 1) + min);
