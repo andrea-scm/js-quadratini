@@ -31,9 +31,9 @@
 #contatore{
   color: white;
   width: 91%;
-  height: 100px;
+  height: 80px;
   background: #cecece;
   text-align: center;
-  line-height: 100px;
+  line-height: 80px;
   font-size: 30px;
 }

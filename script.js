@@ -39,7 +39,7 @@ $('.quadratini').each(function() {
   }
 });
 
-//console.log($('.box_container'));
+console.log($('.box_container'));
 
 function rndNum(min, max) {
   return Math.floor(Math.random()*(max - min + 1) + min);
