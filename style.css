@@ -5,14 +5,14 @@
 }
 
 .box_container{
-  width: 70vw;
+  width: 33vw;
   height: 100vh;
   margin: 0 auto;
 }
 
 .quadratini{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: white;
   border: 2px solid;
   float: left;
@@ -30,10 +30,9 @@
 
 #contatore{
   color: white;
-  width: 35vw;
+  width: 91%;
   height: 100px;
   background: #cecece;
-  margin: 0 auto;
   text-align: center;
   line-height: 100px;
   font-size: 30px;

@@ -1,4 +1,4 @@
-for (var i = 0; i < 65; i++) {
+for (var i = 0; i < 64; i++) {
   /*
   con .append ad ogni ciclo aggiungo un <div class = "quadratini"/>
   al div padre con class = ".box_container"
