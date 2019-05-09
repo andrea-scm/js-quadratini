@@ -24,17 +24,23 @@ $('.quadratini').each(function() {
   //genero i quadratini rossi
   if( rnd.includes($(this).index()) ){
     $(this).click(function() {
-      $(this).addClass('red');
       //conta i rossi
-      red_count++;
-      document.getElementById('rossi').innerHTML =red_count;
+      if (!$(this).hasClass('red')) {
+        red_count++;
+        document.getElementById('rossi').innerHTML =red_count;
+      }
+
+      $(this).addClass('red');
     });
   }else{
     $(this).click(function() {
-      $(this).addClass('green');
       //conta i verdi
-      green_count++;
-      document.getElementById('verdi').innerHTML =green_count;
+      if (!$(this).hasClass('green')) {
+        green_count++;
+        document.getElementById('verdi').innerHTML =green_count;
+      }
+
+      $(this).addClass('green');
     });
   }
 });
